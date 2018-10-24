@@ -17,10 +17,11 @@ def add_case(caseName='case',rule='test*.py'):
 
 
 def run_case(all_case,reportName="report"):
-    now=time.strftime('%Y_%m_%d_%H_%M_%S')
+    # now=time.strftime('%Y_%m_%d_%H_%M_%S')
     report_path=os.path.join(cur_path,reportName)
     if not os.path.exists(report_path):os.mkdir(report_path)
-    report_abspath=os.path.join(report_path,now+"result.html")
+    # report_abspath=os.path.join(report_path,now+"result.html")
+    report_abspath = os.path.join(report_path,"result.html")
     print("report path:%s"%report_abspath)
     fp=open(report_abspath,'wb')
     runner=HTMLTestRunner.HTMLTestRunner(stream=fp,title=u'自动化测试报告，测试结果如下：',description=u'用例执行情况：')
