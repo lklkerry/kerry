@@ -9,13 +9,14 @@ if not os.path.exists(log_path):os.mkdir(log_path)
 
 class Log():
     def __init__(self):
-        self.logname=os.path.join(log_path,'%s.log'%time.strftime('%Y_%m_%d_%H_%M_%S'))
+        # self.logname=os.path.join(log_path,'%s.log'%time.strftime('%Y_%m_%d_%H_%M_%S'))
         self.logger=logging.getLogger()
         self.logger.setLevel(logging.DEBUG)
         self.formatter=logging.Formatter('%(asctime)s-%(name)s-%(levelname)s-%(message)s')
         # formatter = logging.Formatter('%(asctime)s-%(name)s-%(levelname)s-%(message)s')
     def __console(self,level,message):
-        fh=logging.FileHandler(self.logname,'a',encoding='utf-8')
+        # fh=logging.FileHandler(self.logname,'a',encoding='utf-8')
+        fh = logging.FileHandler('a', encoding='utf-8')
         fh.setLevel(logging.DEBUG)
         fh.setFormatter(self.formatter)
         self.logger.addHandler(fh)
