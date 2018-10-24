@@ -1,0 +1,6 @@
+2018-10-24 14:27:41,136-root-INFO-----------start!-------
+2018-10-24 14:27:41,140-root-INFO-测试单号：3381022448107 快递名称：申通快递
+2018-10-24 14:27:41,143-root-INFO-测试url地址：http://www.kuaidi.com/index-ajaxselectcourierinfo-3381022448107-shentong.html
+2018-10-24 14:27:41,334-root-INFO-获取请求结果：{'success': False, 'ico': '', 'phone': '', 'url': '', 'status': 0, 'companytype': 'shentong', 'nu': '3381022448107', 'company': None, 'reason': '快递公司参数异常：单号不存在或者已经过期', 'data': '', 'time': '', 'rank': '2.8', 'exceed': '', 'timeused': '--'}
+2018-10-24 14:27:43,216-root-INFO-获取公司名称：None
+2018-10-24 14:27:43,221-root-INFO-获取data内容：
